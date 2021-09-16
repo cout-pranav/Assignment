@@ -53,7 +53,6 @@ namespace FirstAssignment
 
             }//endFor
 
-//  *********************Indexing of Lines Starts From 0 **********************
             // KeyAndItsOccurance(openWith);
 
             Console.WriteLine("Input String:");
