@@ -32,6 +32,10 @@ namespace FirstAssignment
 
                     foreach (var word in words)
                     {
+                        //if blank word
+                        if (string.IsNullOrWhiteSpace(word))
+                            continue;
+
                         var cleanWord = PrefixSufixStrippngOnWord(word).ToLower();
 
                         
@@ -44,7 +48,7 @@ namespace FirstAssignment
                             ourDictionary[cleanWord] = list;
                             
                         }
-                        else// if word is not there in dictionary
+                        else// if word occurs for the first time
                         {
                             //adding line num with as value
                             ourDictionary.Add(cleanWord, new List<int>() { linesCount});
@@ -101,13 +105,14 @@ namespace FirstAssignment
                 end--;
             }
 
-            if (word.EndsWith('\'') || word.EndsWith(')'))
+            if (word[end] == '\'' || word[end] == ')')
             {
+                Console.WriteLine("yes");
                 end--;
             }
 
 
-            if (word.StartsWith('\'') || word.StartsWith('(') )
+            if (word[start] == '\'' || word[start] =='(' )
             {
                 start++;
             }
