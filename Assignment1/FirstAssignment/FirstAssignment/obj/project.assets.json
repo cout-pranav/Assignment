@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tambatp\\OneDrive - Lenze SE\\Desktop\\learn code\\FirstAssignment\\FirstAssignment\\FirstAssignment.csproj",
+      "projectUniqueName": "C:\\Users\\tambatp\\OneDrive - Lenze SE\\Desktop\\github\\Assignment1\\FirstAssignment\\FirstAssignment\\FirstAssignment.csproj",
       "projectName": "FirstAssignment",
-      "projectPath": "C:\\Users\\tambatp\\OneDrive - Lenze SE\\Desktop\\learn code\\FirstAssignment\\FirstAssignment\\FirstAssignment.csproj",
+      "projectPath": "C:\\Users\\tambatp\\OneDrive - Lenze SE\\Desktop\\github\\Assignment1\\FirstAssignment\\FirstAssignment\\FirstAssignment.csproj",
       "packagesPath": "C:\\Users\\tambatp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tambatp\\OneDrive - Lenze SE\\Desktop\\learn code\\FirstAssignment\\FirstAssignment\\obj\\",
+      "outputPath": "C:\\Users\\tambatp\\OneDrive - Lenze SE\\Desktop\\github\\Assignment1\\FirstAssignment\\FirstAssignment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tambatp\\AppData\\Roaming\\NuGet\\NuGet.Config",

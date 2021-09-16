@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
+using System.Reflection;
 
 namespace FirstAssignment
 {
@@ -8,47 +10,46 @@ namespace FirstAssignment
     {
         static void Main(string[] args)
         {
+            //finding relative file path
+            var filePath = Directory.GetCurrentDirectory();
+            var indexOfBin = filePath.IndexOf("\\bin");
+            var newPath = filePath.Remove(indexOfBin) + @"\sample.txt";
 
-            //Open File And Read File Content One By One
-            var filePath = @"C:\Users\tambatp\OneDrive - Lenze SE\Desktop\learn code\FirstAssignment\FirstAssignment\sample.txt";
-            var fileName = Path.GetFileName(filePath);
+            var linesCount = 0;          
+            Dictionary<string, List<int>> ourDictionary = new Dictionary<string, List<int>>();
 
-            var linesCount = 0;
             //read one line at a time from file
-
-            Dictionary<string, List<int>> openWith = new Dictionary<string, List<int>>();
-
-            foreach (var line in File.ReadLines(filePath))
+            foreach (var line in File.ReadLines(newPath))
             {
-                linesCount++;
+                linesCount++; 
+                
                 //if line is black
                 if (String.IsNullOrWhiteSpace(line))
                     continue;
 
-               
-
+                //seperate words from file
                 var words = line.Split(' ');
 
-                foreach (var word in words)
-                {
-                    var cleanWord = MakeWordClean(word).ToLower();
+                    foreach (var word in words)
+                    {
+                        var cleanWord = PrefixSufixStrippngOnWord(word).ToLower();
 
-                    
-                    // if word is already there in dictionary
-                    if ( openWith.ContainsKey(cleanWord) )
-                    {
-                        // insertion of word & list of lines on which it has occured
-                        var list = openWith[cleanWord];
-                        list.Add(linesCount-1);
-                        openWith[cleanWord] = list;
                         
+                        // if word is already there in dictionary
+                        if ( ourDictionary.ContainsKey(cleanWord) )
+                        {
+                            // insertion of word & list of lines on which it has occured
+                            var list = ourDictionary[cleanWord];
+                            list.Add(linesCount);
+                            ourDictionary[cleanWord] = list;
+                            
+                        }
+                        else// if word is not there in dictionary
+                        {
+                            //adding line num with as value
+                            ourDictionary.Add(cleanWord, new List<int>() { linesCount});
+                        }
                     }
-                    else// if word is not there in dictionary
-                    {
-                        //adding line num with as value
-                        openWith.Add(cleanWord, new List<int>() { linesCount-1 });
-                    }
-                }
 
             }//endFor
 
@@ -59,9 +60,9 @@ namespace FirstAssignment
             var inputString = Console.ReadLine().ToLower();
 
            
-            if (openWith.ContainsKey(inputString))
+            if (ourDictionary.ContainsKey(inputString))
             {
-                var value = openWith[inputString];
+                var value = ourDictionary[inputString];
 
                 Console.WriteLine("Total occurrences: {0}", value.Count);
 
@@ -70,7 +71,7 @@ namespace FirstAssignment
 
                 if(intValue > value.Count )
                 {
-                    Console.WriteLine($"Value Entered Is Greater Than Count Of {inputString}");
+                    Console.WriteLine($"Value Entered Is Greater Than Count Of \" {inputString} \"   " );
                 }
                 else
                 {
@@ -82,33 +83,15 @@ namespace FirstAssignment
             {
                 Console.WriteLine("String is not present");
             }
-            
+         
         }//end Main
 
-      public static void KeyAndItsOccurance(Dictionary<string, List<int>> openWith)
-        {
-            foreach (KeyValuePair<string, List<int>> kvp in openWith)
-            {
-                var Key = kvp.Key;
-                var Value = kvp.Value;
-
-                Console.Write($"Key => {Key}" + " ");
-
-                Console.Write(",Occurance Line =>");
-                foreach (var v in Value)
-                {
-                    Console.Write(v + " ");
-                }
-
-                Console.WriteLine("\n");
-            }
-        }
         /// <summary>
         /// Fuction removes prefix and sufix from word 
         /// </summary>
         /// <param name="word"></param>
         /// <returns></returns>
-        public static string MakeWordClean(string word)
+        public static string PrefixSufixStrippngOnWord(string word)
         {
             int start = 0;
             int end = word.Length - 1;
@@ -131,6 +114,25 @@ namespace FirstAssignment
             }
    
             return word.Substring(start,end-start+1);
+        }
+
+        public static void KeyAndItsOccurance(Dictionary<string, List<int>> openWith)
+        {
+            foreach (KeyValuePair<string, List<int>> kvp in openWith)
+            {
+                var Key = kvp.Key;
+                var Value = kvp.Value;
+
+                Console.Write($"Key => {Key}" + " ");
+
+                Console.Write(",Occurance Line =>");
+                foreach (var v in Value)
+                {
+                    Console.Write(v + " ");
+                }
+
+                Console.WriteLine("\n");
+            }
         }
     }
 }
