@@ -1,0 +1,10 @@
+C:\Users\tambatp\OneDrive - Lenze SE\Desktop\learn code\Third Course\Assignement1\bin\Debug\Assignement1.exe.config
+C:\Users\tambatp\OneDrive - Lenze SE\Desktop\learn code\Third Course\Assignement1\bin\Debug\Assignement1.exe
+C:\Users\tambatp\OneDrive - Lenze SE\Desktop\learn code\Third Course\Assignement1\bin\Debug\Assignement1.pdb
+C:\Users\tambatp\OneDrive - Lenze SE\Desktop\learn code\Third Course\Assignement1\obj\Debug\Assignement1.csproj.AssemblyReference.cache
+C:\Users\tambatp\OneDrive - Lenze SE\Desktop\learn code\Third Course\Assignement1\obj\Debug\Assignement1.Form1.resources
+C:\Users\tambatp\OneDrive - Lenze SE\Desktop\learn code\Third Course\Assignement1\obj\Debug\Assignement1.Properties.Resources.resources
+C:\Users\tambatp\OneDrive - Lenze SE\Desktop\learn code\Third Course\Assignement1\obj\Debug\Assignement1.csproj.GenerateResource.cache
+C:\Users\tambatp\OneDrive - Lenze SE\Desktop\learn code\Third Course\Assignement1\obj\Debug\Assignement1.csproj.CoreCompileInputs.cache
+C:\Users\tambatp\OneDrive - Lenze SE\Desktop\learn code\Third Course\Assignement1\obj\Debug\Assignement1.exe
+C:\Users\tambatp\OneDrive - Lenze SE\Desktop\learn code\Third Course\Assignement1\obj\Debug\Assignement1.pdb
