@@ -1,0 +1,16 @@
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\bin\Debug\netstandard2.0\MessageCenterDemoApp.deps.json
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\bin\Debug\netstandard2.0\MessageCenterDemoApp.dll
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\bin\Debug\netstandard2.0\ref\MessageCenterDemoApp.dll
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\bin\Debug\netstandard2.0\MessageCenterDemoApp.pdb
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\obj\Debug\netstandard2.0\MessageCenterDemoApp.csproj.AssemblyReference.cache
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\obj\Debug\netstandard2.0\MessageCenterDemoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\obj\Debug\netstandard2.0\MessageCenterDemoApp.AssemblyInfoInputs.cache
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\obj\Debug\netstandard2.0\MessageCenterDemoApp.AssemblyInfo.cs
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\obj\Debug\netstandard2.0\MessageCenterDemoApp.csproj.CoreCompileInputs.cache
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\obj\Debug\netstandard2.0\MessageCenterDemoApp.dll
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\obj\Debug\netstandard2.0\ref\MessageCenterDemoApp.dll
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\obj\Debug\netstandard2.0\MessageCenterDemoApp.pdb
+C:\Users\tambatp\source\repos\MessageCenterDemoApp\MessageCenterDemoApp\obj\Debug\netstandard2.0\Page1.xaml.g.cs
